@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>207 Design Studio — SOP Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f8f8f4;
+      --ink: #111111;
+      --accent: #355c3b; /* muted field green */
+      --muted: #777777;
+      --border: #cccccc;
+      --mono: "SF Mono", Menlo, Consolas, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .brand-block {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .brand-block span {
+      color: var(--accent);
+    }
+
+    .meta-block {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 10px 0 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .notice {
+      font-size: 11px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .notice code {
+      font-family: var(--mono);
+      font-size: 11px;
+    }
+
+    .notice a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+    }
+
+    .section {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      margin-top: 16px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    ul.sop-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .sop-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      border-bottom: 1px dotted var(--border);
+      padding: 5px 0;
+      gap: 6px;
+    }
+
+    .sop-code {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      min-width: 90px;
+      color: var(--accent);
+    }
+
+    .sop-main {
+      flex: 1;
+      min-width: 180px;
+      font-size: 13px;
+    }
+
+    .sop-main a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .sop-main a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .sop-note {
+      font-size: 11px;
+      color: var(--muted);
+      flex-basis: 100%;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+      padding-top: 8px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    @media print {
+      body { background: #ffffff; }
+      .notice { display: none; }
+      a { text-decoration: none; color: #000000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <div class="brand-block">
+          <span>207</span> Design Studio
+        </div>
+        <h1>SOP Index</h1>
+        <div class="subtitle">Field Manual & Systems Directory</div>
+      </div>
+      <div class="meta-block">
+        <div>Document: INDEX-001</div>
+        <div>Location: Google Drive / SOP Folder</div>
+        <div>Date: JAN 2026</div>
+      </div>
+    </header>
+
+    <div class="notice">
+      <strong>SOP Hub:</strong>
+      <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+        Open 207 Design Studio — SOP Folder
+      </a>
+      <br />
+      • All PDFs live in this folder.<br />
+      • Links below can be updated later to point to specific PDFs, but for now they all land in the SOP folder so nothing breaks.<br />
+      • Sharing should be set to <code>Anyone with the link → Viewer</code>.
+    </div>
+
+    <!-- 0 — OPERATING SYSTEM -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">0 — Operating System</div>
+        <div class="section-tag">Philosophy • Documentation • Planning</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-000</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Operating Philosophy & PDF Style Guide
+            </a>
+          </div>
+          <div class="sop-note">
+            Core rules for documentation, layout, numbering, and brand tone. This site follows this SOP.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 1 — STUDIO INFRASTRUCTURE -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">1 — Studio Infrastructure</div>
+        <div class="section-tag">Layout • Electrical • Ventilation • Audio</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-010</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Master Floor Plan
+            </a>
+          </div>
+          <div class="sop-note">
+            Clean reference floor plan used as the base for all overlays (lighting, vents, LV).
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-041</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Low-Voltage Wiring System
+            </a>
+          </div>
+          <div class="sop-note">
+            Numbering system, wiring ledger, cabinet layout for low-voltage, notification, AV, and network runs.
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-042</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Ceiling & Drywall Sequencing
+            </a>
+          </div>
+          <div class="sop-note">
+            Order-of-operations for strapping, shimming, electrical, and board hanging.
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-043</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Lighting Zoning & Scenes (Hybrid A / C)
+            </a>
+          </div>
+          <div class="sop-note">
+            Switch layout, zones, and scenes for upper studio, darkroom, washout, and lower studio.
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-044</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Light-Safe Vent System (Foam Baffle Build)
+            </a>
+          </div>
+          <div class="sop-note">
+            14×7×6 baffle box, 1.5&quot; air gaps, 3-foam-baffle design for darkroom-safe intake.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2 — TOOLS & EQUIPMENT -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">2 — Tools & Equipment</div>
+        <div class="section-tag">Saws • Station Setup • Maintenance</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-020</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Tools SOP Index — Wall Version
+            </a>
+          </div>
+          <div class="sop-note">
+            High-level index for major tools, QR codes, and maintenance rules.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3 — SCREEN PRINTING SYSTEMS -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">3 — Screen Printing Systems</div>
+        <div class="section-tag">Darkroom • Exposure • Washout • Press</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-030</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Screen Printing Systems Overview
+            </a>
+          </div>
+          <div class="sop-note">
+            Map of exposure, washout, printing, drying, QC, and storage systems.
+          </div>
+        </li>
+        <!-- Add 031–038 links here as you finalize and upload those PDFs -->
+      </ul>
+    </section>
+
+    <!-- 4 — SPECIAL PROJECTS -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">4 — Special Projects</div>
+        <div class="section-tag">Experiments • Seasonal Systems</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-040</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Snowflake Capture & Preservation
+            </a>
+          </div>
+          <div class="sop-note">
+            Field kit, capture workflow, freezer storage protocol for snowflake specimens.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5 — BUSINESS SYSTEMS -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">5 — Business Systems</div>
+        <div class="section-tag">Brand • Clients • Sales</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-050</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Branding & Identity
+            </a>
+          </div>
+          <div class="sop-note">
+            207 Design visual language, tone, and usage across web, print, and apparel.
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-052</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Etsy & Studio Sales Guide
+            </a>
+          </div>
+          <div class="sop-note">
+            How 207 Design, Pine Tree Print, and jbishop products connect and sell.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 6 — MAINTENANCE & SAFETY -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">6 — Maintenance & Safety</div>
+        <div class="section-tag">Laser • Heat • Seasonal Tasks</div>
+      </div>
+      <ul class="sop-list">
+        <li class="sop-item">
+          <div class="sop-code">SOP-060</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Laser Winterization & Water Safety
+            </a>
+          </div>
+          <div class="sop-note">
+            Temperature controller settings, minimum water temps, and freeze prevention.
+          </div>
+        </li>
+        <li class="sop-item">
+          <div class="sop-code">SOP-061</div>
+          <div class="sop-main">
+            <a href="https://drive.google.com/drive/folders/1CNMs6CtQb20mjewmwgrK-sfT8XyPBTRO?usp=sharing" target="_blank" rel="noopener">
+              Laser Maintenance Log & Spring Checklist
+            </a>
+          </div>
+          <div class="sop-note">
+            Periodic inspection, cleaning, alignment, and start-of-season tasks.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>207 Design Studio — SOP Index</div>
+      <div>“Wall docs are for speed. PDFs are for depth.”</div>
+    </footer>
+  </div>
+</body>
+</html>
